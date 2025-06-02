@@ -1,3 +1,10 @@
+import { registerRootComponent } from 'expo';
+import React from 'react';
+
+// Import your Call screen (adjust path if needed)
+import Call from './call';
+
+// Optionally keep existing imports if you want to use them later
 import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
@@ -6,8 +13,11 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
-// sunny was here
-export default function HomeScreen() {
+// Register Call as the root component
+registerRootComponent(Call);
+
+// (optional) You can still export HomeScreen for other usages or testing
+export function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
