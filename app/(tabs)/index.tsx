@@ -6,7 +6,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
-// AISHU was here
+// ANAHAT WAS HERE
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
